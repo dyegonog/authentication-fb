@@ -6,5 +6,11 @@ import { Component } from '@angular/core';
     styleUrls: ['./cadastro.component.css']
 })
 export class CadastroComponent {
+    nome: string;
+    email: string;
+    senha: string;
 
+    cadastrar(): void {
+
+    }
 }

@@ -3,18 +3,15 @@
     <hr>
     <form>
         <div class="form-group">
-            <input type="text" class="form-control" placeholder="Nome">
+            <input name="nome" type="text" class="form-control" placeholder="Nome" [(ngModel)]="nome">
         </div>
         <div class="form-group">
-            <input type="text" class="form-control" placeholder="E-mail">
+            <input name="email" type="text" class="form-control" placeholder="E-mail" [(ngModel)]="email">
         </div>
         <div class="form-group">
-            <input type="password" class="form-control" placeholder="Senha">
+            <input name="senha" type="password" class="form-control" placeholder="Senha" [(ngModel)]="senha">
         </div>
-        <div class="form-group">
-            <input type="password" class="form-control" placeholder="Confirme sua senha">
-        </div>
-        <button class="btn btn-lg btn-block btn-success">Cadastrar</button>
+        <button class="btn btn-lg btn-block btn-success" (click)="cadastrar()">Cadastrar</button>
         <a class="btn btn-lg btn-block btn-primary" routerLink="/login">Voltar</a>
     </form>
 </div>

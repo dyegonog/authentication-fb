@@ -1,0 +1,12 @@
+<h2 class="text-center">Compromisso</h2>
+<div class="col-md-4">
+    <form>
+        <label>Titulo</label>
+        <input type="text" class="form-control" name="titulo" [(ngModel)]="titulo">
+        <label>Data</label>
+        <input type="date" class="form-control" name="data" [(ngModel)]="dataDoCompromisso">
+        <label>Descrição</label>
+        <input type="text" class="form-control" name="descricao" [(ngModel)]="descricao">
+        <button class="btn" (click)="salvar()">Salvar</button>
+    </form>
+</div>
